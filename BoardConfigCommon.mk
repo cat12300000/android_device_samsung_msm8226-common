@@ -52,7 +52,6 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 
 # WLAN (WCNSS/prima)
-# TODO: check the module path/name against the stock ROM (/system/lib/modules)
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_HOSTAPD_DRIVER := NL80211
@@ -73,4 +72,7 @@ BOARD_VOLD_MAX_PARTITIONS := 40
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
 # Misc
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Lights
 TARGET_PROVIDES_LIBLIGHT := true
