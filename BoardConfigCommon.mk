@@ -36,6 +36,10 @@ TARGET_POWERHAL_VARIANT := qcom
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 
+# Camera: use the stock vendor camera blobs (liboemcamera etc.) instead of
+# building hardware/qcom/camera from source
+USE_DEVICE_SPECIFIC_CAMERA := true
+
 # Graphics
 BOARD_EGL_CFG := $(LOCAL_PATH)/configs/egl.cfg
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
