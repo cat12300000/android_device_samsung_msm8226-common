@@ -5,5 +5,11 @@ starting point for hl3gds (SM-N7502). Not boot-tested.
 
 Needs these extra projects in the manifest:
 - device/qcom/common            (CyanogenMod/android_device_qcom_common, cm-11.0)
-- hardware/qcom/display-caf-new (CyanogenMod/android_hardware_qcom_display-caf-new, cm-11.0)
-- hardware/qcom/media-caf-new   (CyanogenMod/android_hardware_qcom_media-caf-new, cm-11.0)
+- hardware/qcom/display-caf-new (cat12300000 fork, cm-11.0-hl3gds)
+- hardware/qcom/media-caf-new   (cat12300000 fork, cm-11.0-hl3gds)
+- vendor/cm                     (cat12300000 fork, cm-11.0-hl3gds)
+
+The cat12300000 forks carry the fixes needed to build against the 3.4 hl3gds
+kernel (QCMetaData/VIDC compatibility, display HAL stubs, audio_effects UAPI
+header, and removal of the dead Term.apk prebuilt). Copy
+`local_manifests/hl3gds.xml` into `.repo/local_manifests/` before `repo sync`.
